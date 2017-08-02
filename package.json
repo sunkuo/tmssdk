@@ -1,0 +1,32 @@
+{
+  "name": "tmssdk",
+  "version": "1.0.0",
+  "description": "sdk for tms",
+  "main": "tms.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunkuo/tmssdk.git"
+  },
+  "keywords": [
+    "tms"
+  ],
+  "author": "sunkuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunkuo/tmssdk/issues"
+  },
+  "homepage": "https://github.com/sunkuo/tmssdk#readme",
+  "devDependencies": {
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
