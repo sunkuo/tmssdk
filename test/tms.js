@@ -1,8 +1,8 @@
 const should = require('should')
 const Tms = require('../tms.js')
 
-const APPKEY = 'your app key',
-const SECRETKEY = 'your secret key',
+const APPKEY = 'your app key'
+const SECRETKEY = 'your secret key'
 const TOKEN = 'your token key'
 
 describe('tmssdk', function() {
