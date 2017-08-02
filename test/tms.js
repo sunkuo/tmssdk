@@ -1,9 +1,13 @@
 const should = require('should')
 const Tms = require('../tms.js')
 
+const APPKEY = 'your app key',
+const SECRETKEY = 'your secret key',
+const TOKEN = 'your token key'
+
 describe('tmssdk', function() {
   it('query should word', function(done) {
-    const tms = new Tms('481899', 'x1373QNH63t130zwIS2G3D7979fDUWNU', 'cFhoajNyS3EvLyt1WjBzVytqMTZtdFRyVFR5dVhsTGw2VlFIbDVaUzVGWHFZYVNubmhkbWhmUDhWanFPNGhOTQ==')
+    const tms = new Tms(APPKEY, SECRETKEY, TOKEN)
     tms.query().production(true).request().then((result) => {
       console.log(result)
       done()
@@ -11,7 +15,7 @@ describe('tmssdk', function() {
   })
 
   it('get should work', function(done) {
-    const tms = new Tms('481899', 'x1373QNH63t130zwIS2G3D7979fDUWNU', 'cFhoajNyS3EvLyt1WjBzVytqMTZtdFRyVFR5dVhsTGw2VlFIbDVaUzVGWHFZYVNubmhkbWhmUDhWanFPNGhOTQ==')
+    const tms = new Tms(APPKEY, SECRETKEY, TOKEN)
     const sender = {
       address : {
           city : "上海市",
