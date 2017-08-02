@@ -34,7 +34,9 @@ tms.query().production(true).request().then(function(result){
 ```javascript
 const TMS = require('tmssdk')
 const tms = new TMS('appKey', 'secretKey', 'token')
-tms.get().production(true).request().then(function(result){
+tms.get().production(true).body({
+  sender, packageInfo, ...otherInfo
+}).request().then(function(result){
     console.log(result)
 }).catch()
 ```
